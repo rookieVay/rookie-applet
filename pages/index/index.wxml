@@ -1,0 +1,27 @@
+<view class="container">
+  <view>
+    <swiper class="banner">
+      <swiper-item wx:for="{{banner}}" wx:key="{{id}}">
+        <image src="{{item}}"></image>
+      </swiper-item>
+    </swiper>
+  </view>
+  <view class="floor" wx:for="{{movie}}" wx:for-item="m" wx:key="{{id}}">
+    <view class="floor-head">
+      <text class="title">{{m.floorTitle}}</text>
+      <text catchtap="onMore" class="more" data-id="{{m.id}}" data-floorTitle="{{m.floorTitle}}">more</text>
+    </view>
+    <scroll-view class="floor-main" scroll-x="true">
+      <view class="movie-list">
+        <block wx:for="{{m.lists}}" wx:for-item="l" wx:key="{{id}}">
+          <block wx:if="{{index < 8}}">
+            <view catchtap="onDetails" class="item" data-mid="{{m.id}}" data-lid="{{l.id}}" data-title="{{l.title}}">
+              <image src="{{l.img}}" lazy-load="true"></image>
+              <text>{{l.title}}</text>
+            </view>
+          </block>
+        </block>
+      </view>
+    </scroll-view>
+  </view>
+</view>

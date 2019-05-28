@@ -1,0 +1,27 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/list/list",
+    "pages/classify/classify",
+    "pages/details/details"
+  ],
+  "tabBar": {
+    "color": "#000",
+    "selectedColor": "#f6a43a",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "images/icon/home.png",
+        "selectedIconPath": "images/icon/home_hover.png"
+      },
+      {
+        "pagePath": "pages/list/list",
+        "text": "影视列表",
+        "iconPath": "images/icon/film.png",
+        "selectedIconPath": "images/icon/film_hover.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}

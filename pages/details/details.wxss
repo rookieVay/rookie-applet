@@ -1,0 +1,20 @@
+.details {
+    padding: 30rpx;
+}
+.details image {
+    display: block;
+    margin: 0 auto;
+    max-width: 60%;
+}
+.details .title {
+    display: block;
+    margin: 20rpx;
+    font-size: 40rpx;
+    text-align: center;
+}
+.details .intro {
+    font-size: 30rpx;
+}
+.details .intro .label {
+    color: #ccc;
+}

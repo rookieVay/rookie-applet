@@ -1,0 +1,17 @@
+<view class="container">
+  <block wx:for="{{movie}}" wx:for-item="m" wx:key="{{id}}">
+    <view wx:if="{{m.id == id}}" class="list">
+      <view class="title">{{m.floorTitle}}</view>
+      <scroll-view scroll-y="ture">
+        <view class="main">
+          <block wx:for="{{m.lists}}" wx:for-item="l" wx:key="{{id}}">
+            <view catchtap="onDetails" class="item" data-mid="{{m.id}}" data-lid="{{l.id}}" data-title="{{l.title}}">
+              <image src="{{l.img}}" lazy-load="true"></image>
+              <text>{{l.title}}</text>
+            </view>
+          </block>
+        </view>
+      </scroll-view>
+    </view>
+  </block>
+</view>

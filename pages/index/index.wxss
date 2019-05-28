@@ -1,0 +1,67 @@
+page {
+    background: #eee;
+}
+
+.banner {
+    width: 100%;
+    height: 400rpx;
+}
+
+.banner image {
+    width: 100%;
+    height: 400rpx;
+}
+
+.floor {
+    margin-top: 30rpx;
+    width: 100%;
+    background: #fff;
+}
+
+.floor .floor-head {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20rpx;
+    padding: 10rpx 20rpx;
+    overflow: hidden;
+    font-size: 30rpx;
+    border-bottom: 1px solid #eee;
+}
+
+.floor .floor-head .title {
+}
+
+.floor .floor-head .more {
+    color: #ccc;
+}
+
+.floor .floor-main {
+    padding-right: 10rpx;
+    box-sizing: border-box;
+}
+
+.floor .movie-list {
+    display: flex;
+    flex-direction: row;
+    width: 900rpx;
+}
+
+.floor .movie-list .item {
+    display: flex;
+    flex-direction: column;
+    margin: 0 10rpx;
+    width: 180rpx;
+}
+
+.floor .movie-list image {
+    width: 180rpx;
+    height: 250rpx;
+}
+.floor .movie-list text {
+    padding: 10rpx 0;
+    font-size: 28rpx;
+    text-align: center;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}

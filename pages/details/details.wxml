@@ -1,0 +1,13 @@
+<view class="container">
+  <block wx:for="{{movie}}" wx:for-item="m" wx:key="{{id}}">
+    <block wx:for="{{m.lists}}" wx:for-item="l" wx:key="{{id}}">
+      <block wx:if="{{m.id == mid && l.id == lid}}">
+        <view class="details">
+          <image src="{{l.img}}"></image>
+          <text class="title">{{l.title}}</text>
+          <text class="intro"><text class="label">简介：</text>{{l.intro}}</text>
+        </view>
+      </block>
+    </block>
+  </block>
+</view>
